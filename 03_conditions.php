@@ -13,14 +13,19 @@
 		<h1>Aprendiendo PHP</h1>
 		<div class="codigo">
 			<?php
-				$hola = "Hola Mundo";
-				$numero = 22;
+				$numero1 = 22;
+				$numero2 = 49;
 
-				echo $hola;
-
-				echo "<br/>";
-
-				echo $numero;
+				if ($numero1 > $numero2) {
+					echo "Numero 1 es Mayor";
+				} 
+				elseif ($numero1 == $numero2) {
+					echo "Numero 1 es igual a Numero 2";
+				}
+				else {
+					echo "Numero 2 es Mayor";
+				} 
+				
 			?>
 		</div>
 	</div>

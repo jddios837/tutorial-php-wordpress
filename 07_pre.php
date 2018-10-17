@@ -13,14 +13,21 @@
 		<h1>Aprendiendo PHP</h1>
 		<div class="codigo">
 			<?php
-				$hola = "Hola Mundo";
-				$numero = 22;
+				$estudiante = array(
+					'nombre' => 'Juan', 
+					'apellido' => 'Gomez', 
+					'pais' => 'Mexico',
+					'edad' => 29,
+					'usuario_logueado' => true
+				);
 
-				echo $hola;
-
-				echo "<br/>";
-
-				echo $numero;
+				echo $estudiante['nombre']. ' '. $estudiante['apellido'];
+			
+				echo "<pre>";
+				print_r($estudiante);
+				// muestra informacion del tipo de dato
+				var_dump($estudiante);
+				echo "</pre>";
 			?>
 		</div>
 	</div>

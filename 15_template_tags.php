@@ -13,15 +13,25 @@
 		<h1>Aprendiendo PHP</h1>
 		<div class="codigo">
 			<?php
-				$hola = "Hola Mundo";
-				$numero = 22;
+				function the_title(){
+					echo "El titulo de mi blog";
+				}
 
-				echo $hola;
+				function the_date(){
+					echo date('Y a d');
+				}
 
-				echo "<br/>";
-
-				echo $numero;
+				function the_author(){
+					echo "Juan";
+				}
 			?>
+
+			<div class="entrada">
+				<h2><?php the_title(); ?></h2>
+				<p>Publicado el <?php the_date(); ?></p>
+				<p>Escrito por: <?php the_author(); ?></p>
+			</div>
+			
 		</div>
 	</div>
 </body>

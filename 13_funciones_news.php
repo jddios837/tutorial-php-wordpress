@@ -13,15 +13,23 @@
 		<h1>Aprendiendo PHP</h1>
 		<div class="codigo">
 			<?php
-				$hola = "Hola Mundo";
-				$numero = 22;
+				function saludar(){
+					echo "Bienvido al sitio <br/>";
+				}
 
-				echo $hola;
+				saludar();
+				saludar();
+				saludar();
+				saludar();
 
-				echo "<br/>";
+				function suma(){
+					echo 2 + 2 . "<br/>";
+				}
 
-				echo $numero;
+				suma()
 			?>
+
+			
 		</div>
 	</div>
 </body>

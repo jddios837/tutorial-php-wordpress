@@ -13,15 +13,26 @@
 		<h1>Aprendiendo PHP</h1>
 		<div class="codigo">
 			<?php
-				$hola = "Hola Mundo";
-				$numero = 22;
+				function total_pagar($cantidad) {
+					$total = $cantidad * 1.16;
+					return $total;
+				}
 
-				echo $hola;
+				$cantidad_a_pagar = total_pagar("1000");
 
-				echo "<br/>";
+				function balance_banco($cantidad_pagar){
+					$balance = 5000;
 
-				echo $numero;
-			?>
+					if($cantidad_pagar > $balance) {
+						echo "hubo un error en tu pago";
+					} else {
+						echo "Pago Exitoso";
+					}
+				};
+
+				balance_banco($cantidad_a_pagar);
+
+			?>			
 		</div>
 	</div>
 </body>

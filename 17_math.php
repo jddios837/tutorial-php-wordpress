@@ -13,15 +13,37 @@
 		<h1>Aprendiendo PHP</h1>
 		<div class="codigo">
 			<?php
-				$hola = "Hola Mundo";
-				$numero = 22;
-
-				echo $hola;
-
+				echo 2 + 2;
+				echo "<br/>";
+				echo 2 * 2;
+				echo "<br/>";
+				echo 3 - 1;
+				echo "<br/>";
+				echo 9 / 3;
 				echo "<br/>";
 
-				echo $numero;
-			?>
+				echo 10 * (2 + 5);
+				echo "<br/>";
+
+				$total = 0;
+				$total += 20;
+				$total += 50;
+				$total -= 10;
+				$total /= 10;
+				$total *= 10;
+
+				echo "El total es: ". $total;
+			
+				for ($i=0; $i <= 100; $i++) { 
+					if ($i % 2 == 0) {
+						echo "El numero: ". $i. " es par <br/>" ;
+					} else {
+						echo "El numero: ". $i. " es impar <br/>" ;
+					}
+					
+				}
+			
+			?>			
 		</div>
 	</div>
 </body>

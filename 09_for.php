@@ -13,15 +13,18 @@
 		<h1>Aprendiendo PHP</h1>
 		<div class="codigo">
 			<?php
-				$hola = "Hola Mundo";
-				$numero = 22;
+				for ($i=0; $i <= 100; $i++) { 
+					echo $i;
+					echo "<br/>";
 
-				echo $hola;
-
-				echo "<br/>";
-
-				echo $numero;
+					if ($i == 5) {
+						echo "Es CINCO";
+						echo "<br/>";
+					}
+				}
 			?>
+
+			
 		</div>
 	</div>
 </body>

@@ -13,15 +13,34 @@
 		<h1>Aprendiendo PHP</h1>
 		<div class="codigo">
 			<?php
-				$hola = "Hola Mundo";
-				$numero = 22;
+				$frutas = array('manzana', 'naranja', 'melon', 'platano');
 
-				echo $hola;
-
+				echo count($frutas);
 				echo "<br/>";
 
-				echo $numero;
+				$mi_nombre = "Juan Pablo De la Torre Valdez";
+				$mi_nombre2 = str_replace(' ', '', $mi_nombre);
+
+				echo strlen($mi_nombre2);
+				echo $mi_nombre2;
+				echo "<br/>";
+
+				echo strtoupper($mi_nombre);
+				echo "<br/>";
+
+				echo strtolower($mi_nombre);
+
+				echo "<br/>";
+				$password = "abc";
+
+				if(strlen($password) < 5){
+					echo "El password es muy debil";
+				} else {
+					echo "El password es seguro";
+				}
 			?>
+
+			
 		</div>
 	</div>
 </body>

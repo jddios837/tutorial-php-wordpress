@@ -13,14 +13,18 @@
 		<h1>Aprendiendo PHP</h1>
 		<div class="codigo">
 			<?php
-				$hola = "Hola Mundo";
-				$numero = 22;
+				$frutas = array('manzana', 'naranja', 'melon', 'platano');
+				
+				echo $frutas[2];
+				echo '<br/>';
+				// add element 
+				array_push($frutas, 'pera');
+				// remove element
+				unset($frutas[1]);
 
-				echo $hola;
-
-				echo "<br/>";
-
-				echo $numero;
+				echo "<pre>";
+				print_r($frutas);
+				echo "</pre>";
 			?>
 		</div>
 	</div>

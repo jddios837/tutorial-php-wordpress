@@ -13,15 +13,17 @@
 		<h1>Aprendiendo PHP</h1>
 		<div class="codigo">
 			<?php
-				$hola = "Hola Mundo";
-				$numero = 22;
-
-				echo $hola;
-
-				echo "<br/>";
-
-				echo $numero;
+				$estudiante = array(
+					'nombre' => 'Juan', 
+					'apellido' => 'Gomez', 
+					'pais' => 'Mexico',
+					'edad' => 29,
+					'usuario_logueado' => true
+				);
 			?>
+
+			<h1>Hola!! <?php echo $estudiante['nombre'] ." ". $estudiante['apellido'] ?></h1>
+			<?php echo "<h1> Hola! " . $estudiante['nombre'] ." ". $estudiante['apellido'] ."</h1>"; ?>
 		</div>
 	</div>
 </body>

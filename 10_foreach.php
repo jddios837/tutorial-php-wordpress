@@ -13,15 +13,15 @@
 		<h1>Aprendiendo PHP</h1>
 		<div class="codigo">
 			<?php
-				$hola = "Hola Mundo";
-				$numero = 22;
+				$frutas = array('manzana', 'naranja', 'melon', 'platano');
 
-				echo $hola;
-
-				echo "<br/>";
-
-				echo $numero;
+				foreach ($frutas as $fruta) {
+					echo "Una de mis frutas es: ";
+					echo $fruta . "<br/>";
+				}
 			?>
+
+			
 		</div>
 	</div>
 </body>
